@@ -1,0 +1,120 @@
+/* section version mobile */
+.bloc-massage {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color); 
+  padding : 0.5rem 0.8rem 0 0.8rem;
+  border-radius: 0.4rem;
+  margin: 0 1rem 3rem 1rem;
+  box-shadow: var(--shadow);
+}
+
+.bloc-massage div.bloc-titre {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.9rem;
+}
+
+.bloc-titre h2{
+  font-size: 1rem;
+  color: #fbfbff;
+  font-family: var(--title-font);
+}
+
+.bloc-massage div.bloc-img {
+  display: flex;
+  flex : 1;
+  gap : 0.6rem;
+  margin-bottom : 1rem;
+}
+
+div.bloc-img img:nth-child(1) {
+  width : 65vw;
+  height : auto;
+  flex : 1;
+  border-radius: 5px;;
+}
+
+div.bloc-img img:nth-child(2) {
+  transition: .4s ease-in-out all;
+  width : 1.8rem;
+  height : 1.8rem;
+  align-self : center;
+}
+
+.bloc-massage p.toogle-paragraphe {
+  display : initial;
+}
+
+img.rotate-btn {
+  transform: rotate(180deg);
+  transition: .4s ease-in-out all;
+}
+
+.bloc-massage p {
+  font-size: 1rem;
+  display : none;
+  margin-bottom: 1rem;
+  width:100%;
+  text-align: justify;
+  font-family: var(--title-font);
+  color: #fbfbff;
+}
+
+@media screen and (min-width: 450px) { /* section version desktop */
+  div.container {
+      margin: 0 auto;
+      width: 75%;
+  }
+  
+  div.bloc-img img:nth-child(1) {
+      min-width : 350px;
+      height: auto; 
+  }
+
+  div.bloc-img img:nth-child(2) {
+     display : none;
+  }
+
+  /* grid */
+  div.bloc-massage {
+    padding : 1rem 2rem;
+    display: grid;
+    grid-template-columns: 55% auto;
+    position : relative;
+    margin-bottom: 10vh;
+    margin-left: 25vw;
+    margin-right: 25vw;
+  }
+
+  .bloc-massage div.bloc-titre {
+    grid-column: 1 / span 2;
+  }
+
+  .bloc-massage div.bloc-img {
+    grid-column: 1;
+  }
+
+  div.bloc-massage p {
+    line-height: 1.5;
+    max-width: 21vw;
+    text-align: initial;
+    display : initial;
+    grid-column: 2;
+    padding : 0 1rem 0 1.5rem;
+    padding-top: initial;
+    padding-top: 1.5rem;
+    font-size: 1rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position : absolute;
+    top : 45px;
+    right : 28px;
+    bottom: 15px;
+  }
+
+  .bloc-titre h2{
+    font-size: initial;
+    font-size: 1.5rem;
+  }
+}

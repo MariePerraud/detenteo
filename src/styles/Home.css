@@ -1,0 +1,356 @@
+/* Header version desktop */
+@media screen and (min-width: 450px){ 
+  .banniere{
+      background-image: url(../assets/calltoaction2.jpg);
+      background-position: 0% 85%;
+      margin: 0;
+      padding: 0;
+      background-size:cover;
+      background-repeat: no-repeat;
+      height: 70vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .titre-banniere{
+      background-color: initial;
+      box-shadow: initial;
+      font-size: 5rem;
+      margin: auto auto;
+      font-family: var(--title-font);
+      text-shadow: 5px 10px 4px rgba(13, 1, 6, 0.5);
+      font-weight: 800;
+  }
+}
+
+/* Header version mobile */
+@media screen and (max-width: 450px){
+  .desktop-header{
+      display: none;
+  }
+  .carrousel-presentation{
+      display: none;
+  }
+}
+
+/* présentation et caroussel */
+@media screen and (min-width: 450px){
+  .desktop-header{
+      margin-top: 9vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+  }
+  
+  .carrousel-presentation{
+      display: block;
+      margin: 0;
+  }
+
+  .presentation{
+      padding-top: 1rem;
+      width: 50vw;
+      margin: 1vh auto;
+      font-family: var(--title-font);
+  }
+  
+  .presentation p{
+      text-align: justify;
+      color: #023047;
+      padding-bottom: 1rem;
+      font-size: 1.5rem;
+  }
+
+  #slider {
+      overflow: hidden;
+      width: 50%;
+      margin-left: 25%;
+      margin-right: 25%;
+      box-shadow: var(--shadow);
+      border-radius: 30px;
+  }
+  
+  #slider figure {
+      position: relative;
+      width: 400%; /* 4 images de 100% */
+      left: 0;
+      animation : 20s slider infinite;
+  }
+  
+  #slider figure img {
+      width: 25%; /* 100% divisé par 4 images */
+      float: left;
+  }
+  
+  @keyframes slider {
+      0% {
+          left: 0;
+      }
+      5% {
+          left : 0;
+      }
+      33% {
+          left: -100%;
+      }
+      38% {
+          left: -100%;
+      }
+      66% {
+          left: -200%;
+      }
+      71% {
+          left: -200%;
+      }
+      100% {
+          left: -300%;
+      }
+  }
+}
+
+/* <section> version mobile */
+.main-page{
+  background-image: url(../assets/calltoaction.jpg);
+  margin: 0;
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 72.5vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-h1{
+  color: white;
+  background-color: initial;
+  font-size: 4rem;
+  font-family: var(--title-font);
+  text-shadow: 5px 10px 4px rgba(13, 1, 6, 0.5);
+  box-shadow: none;
+  margin: 0;
+}
+
+.cta-h2{
+  color: white;
+  background-color: initial;
+  text-align: center;
+  font-size: 1rem;
+  margin : 0 0 0.8rem 0 ;
+  font-family: var(--title-font);
+  text-shadow: 5px 10px 4px rgba(13, 1, 6, 0.5);
+}
+
+.cta-buttons{
+  display: flex;
+  justify-content: space-around;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.cta-picto{
+  height: 5rem;
+  width: 5rem;
+  background-color: white;
+  border: 0.5px;
+  border-radius: 25px;
+  padding: 5px;
+  box-shadow: 5px 5px 2px rgba(184, 176, 176, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+
+.cta-picto-font{
+  font-family: var(--title-font);
+  color: black;
+  font-size: 0.5rem;
+  font-weight: 600;
+}
+
+.cta-size-picto{
+  height: 3.5rem;
+}
+
+@media screen and (max-width: 450px){
+  .desktop-page{
+      display: none;
+  }
+}
+
+/* <section> version desktop */
+@media screen and (min-width: 450px){ 
+  .main-page{
+      display: none;
+  }
+  
+  .desktop-page{
+      display: block;
+      margin: 0;
+  }
+  
+  .spa-massage{
+      max-width: 50vw;
+      padding-top: 3rem;
+      margin : 0 auto;
+  }
+
+  .spa-massage-page-spa{
+      max-width: 50vw;
+      margin : 0 auto;
+      padding-top: initial;
+  }
+
+  .spa-massage2 {
+      max-width: 50vw;
+      padding-top: 3rem;
+      margin : 0 auto;
+  }
+
+  .wrapper1 {
+      background-color: var(--primary-color);
+      height: 35vh;
+      width: 45vw;
+      padding-right: 5vw;
+      padding-left: 3vw;
+      margin-bottom: 20vh;
+      border-radius: 15px;
+      font-family: var(--title-font);
+      z-index: 0;
+      box-shadow: var(--shadow);
+  }
+
+  .wrapper2 {
+      background-color: var(--primary-color);
+      min-height: 35vh;
+      width: 45vw;
+      border-radius: 15px;
+      font-family: var(--title-font);
+      z-index: 0;
+      margin-bottom: 20vh;
+      float: right;
+      box-shadow: var(--shadow);
+      clear : both;
+  }
+  
+  .wrapper3 {
+      clear : both;
+      background-color: var(--primary-color);
+      height: 35vh;
+      width: 45vw;
+      padding-right: 5vw;
+      padding-left: 3vw;
+      margin-bottom: 20vh;
+      border-radius: 15px;
+      font-family: var(--title-font);
+      z-index: 0;
+      box-shadow: var(--shadow);
+  }
+
+  .wrapper4 {
+      background-color: var(--primary-color);
+      min-height: 35vh;
+      width: 45vw;
+      border-radius: 15px;
+      font-family: var(--title-font);
+      z-index: 0;
+      margin-bottom: 20vh;
+      float: right;
+      box-shadow: var(--shadow);
+  }
+
+  .wrapper1 h2, .wrapper3 h2 {
+      color: #fbfbff;
+      padding: 1rem 0 1rem 0;
+      font-family: var(--title-font);
+      font-size: 1.5rem;
+      margin-left: 0.5rem;
+      max-width: 25vw;
+      text-align: start;
+  }
+
+  .wrapper2 h2, .wrapper4 h2 {
+      color: #fbfbff;
+      padding: 1rem 0 1rem 0;
+      font-family: var(--title-font);
+      font-size: 1.5rem;
+      max-width: 25vw;
+      text-align: start;
+      margin-left: 11rem;
+  }
+
+  .wrapper1 p, .wrapper3 p {
+      max-width: 25vw;
+      margin-left: 0.5rem;
+      font-size: 1rem;
+      color: #fbfbff;
+      text-align: justify;
+  }
+
+  .wrapper2 p, .wrapper4 p {
+      max-width: 25vw;
+      margin-left: 11rem;
+      font-size: 1rem;
+      color: #fbfbff;      
+      text-align: justify;
+  }
+
+  .spa{
+      float: right;
+      z-index: 1;
+      margin-top: -50vh;
+  }
+
+  .spa2{
+      float: right;
+      z-index: 1;
+      margin-top: -50vh;
+  }
+  
+  .spa img{
+      border-radius: 15px;
+      box-shadow: var(--shadow);
+  }
+
+  .spa2 img{
+      border-radius: 15px;
+      box-shadow: var(--shadow);
+  }
+
+  .massage{
+      float: left;
+      z-index: 1;
+      margin-top: -50vh;
+  }
+  
+  .massage2 {
+      float: left;
+      z-index: 1;
+      margin-top: -50vh;
+  }
+
+  .massage img{
+      border-radius: 15px;
+      box-shadow: var(--shadow);
+  }
+
+  .massage2 img{
+      border-radius: 15px;
+      box-shadow: var(--shadow);
+  }
+
+  .separateur{
+      width: 45vw;
+      text-align: center;
+      margin-bottom: 10vh;
+  }
+
+  .logo-separateur{
+      width: 5rem;
+      text-align: center;
+  }
+
+  .footer-marie{
+      margin-top: clamp(15rem, 50%, 25rem);
+  }
+}
